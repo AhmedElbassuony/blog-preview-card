@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  --font: "Figtree", serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--Yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  background-color: white;
+  height: 500px;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--Gray-950);
+  box-shadow: 10px 10px 0px var(--Gray-950);
+}
+
+picture{
+  display: block;
+  background-image: url("../images/illustration-article.svg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 45%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.ler{
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: var(--Yellow);
+  margin-bottom: 10px;
+  color: var(--Gray-950);
+}
+
+.date{
+  color: var(--Gray-500);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--Gray-950);
+}
+
+p{
+  color: var(--Gray-500);
+  margin-bottom: 20px;
+}
+div{
+  display: flex;
+  align-items: center;
+}
+div .creator{
+  background-image: url("../images/image-avatar.webp");
+  background-position: center;
+  background-size: cover;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+div h3{
+  font-size: 1rem;
+}
